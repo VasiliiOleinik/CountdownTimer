@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic countdown timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="timer">
+        <div class="timer-title"></div>
+        <div class="timer-action">
+            До
+            <span class="you_date"></span>
+            осталось:
+        </div>
+        <div class="timer-numbers" id="timer">
+            <div class="days_block">
+                <div class="days"></div>
+                <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <circle class="days-icon" r="72" cx="80" cy="80" stroke="#e91e63" stroke-dasharray="453"
+                            stroke-dashoffset="0" stroke-linecap="round" stroke-width="8" fill="none"></circle>
+                        <circle class="circle--bg" r="72" cx="80" cy="80" stroke="rgba(0, 0, 0, .1)"
+                            stroke-linecap="round" stroke-width="8" fill="none"></circle>
+                    </g>
+                </svg>
+                <div class="timer_txt">Дней</div>
+            </div>
+            <div class="hours_block">
+                <div class="hours"></div>
+                <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <circle class="hours-icon" r="72" cx="80" cy="80" stroke="#e91e63" stroke-dasharray="453"
+                            stroke-dashoffset="0" stroke-linecap="round" stroke-width="8" fill="none"></circle>
+                        <circle class="circle--bg" r="72" cx="80" cy="80" stroke="rgba(0, 0, 0, .1)"
+                            stroke-linecap="round" stroke-width="8" fill="none"></circle>
+                    </g>
+                </svg>
+                <div class="timer_txt">Часов</div>
+            </div>
+            <div class="minutes_block">
+                <div class="minutes"></div>
+                <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <circle class="minutes-icon" r="72" cx="80" cy="80" stroke="#e91e63" stroke-dasharray="453"
+                            stroke-dashoffset="0" stroke-linecap="round" stroke-width="8" fill="none"></circle>
+                        <circle class="circle--bg" r="72" cx="80" cy="80" stroke="rgba(0, 0, 0, .1)"
+                            stroke-linecap="round" stroke-width="8" fill="none"></circle>
+                    </g>
+                </svg>
+                <div class="timer_txt">Минут</div>
+            </div>
+            <div class="seconds_block">
+                <div class="seconds"></div>
+                <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <circle class="seconds-icon" r="72" cx="80" cy="80" stroke="#e91e63" stroke-dasharray="453"
+                            stroke-dashoffset="0" stroke-linecap="round" stroke-width="8" fill="none"></circle>
+                        <circle class="circle--bg" r="72" cx="80" cy="80" stroke="rgba(0, 0, 0, .1)"
+                            stroke-linecap="round" stroke-width="8" fill="none"></circle>
+                    </g>
+                </svg>
+                <div class="timer_txt">Секунд</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

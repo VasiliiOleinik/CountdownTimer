@@ -1,0 +1,61 @@
+* {
+    -moz-transition: stroke-dashoffset .4s cubic-bezier(.4, 0, 0, 1.7);
+    -ms-transition: stroke-dashoffset .4s cubic-bezier(.4, 0, 0, 1.7);
+    transition: stroke-dashoffset .4s cubic-bezier(.4, 0, 0, 1.7);
+    font-family: 'Nixie One', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+}
+
+svg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+body {
+    background: #E7E9F2;
+}
+
+.days_block,
+.hours_block,
+.minutes_block,
+.seconds_block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+}
+
+.days_block .days,
+.hours_block .hours,
+.minutes_block .minutes,
+.seconds_block .seconds {
+    position: relative;
+    z-index: 2;
+}
+
+.timer_txt {
+    position: absolute;
+    bottom: -35px;
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.timer {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
